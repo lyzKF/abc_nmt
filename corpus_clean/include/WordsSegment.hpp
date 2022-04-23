@@ -3,11 +3,11 @@
 #include <vector>
 #include <Jieba.hpp>
 
-const std::string &DictPath = "/ldap_home/selby.li/workspace/mt_tools/corpus_clean/third_party/cppjieba/dict/jieba.dict.utf8";
-const std::string &ModelPath = "/ldap_home/selby.li/workspace/mt_tools/corpus_clean/third_party/cppjieba/dict/hmm_model.utf8";
-const std::string &UserDictPath = "/ldap_home/selby.li/workspace/mt_tools/corpus_clean/third_party/cppjieba/dict/user.dict.utf8";
-const std::string &IdfPath = "/ldap_home/selby.li/workspace/mt_tools/corpus_clean/third_party/cppjieba/dict/idf.utf8";
-const std::string &StopWordsPath = "/ldap_home/selby.li/workspace/mt_tools/corpus_clean/third_party/cppjieba/dict/stop_words.utf8";
+const std::string &DictPath = "../third_party/cppjieba/dict/jieba.dict.utf8";
+const std::string &ModelPath = "../third_party/cppjieba/dict/hmm_model.utf8";
+const std::string &UserDictPath = "../third_party/cppjieba/dict/user.dict.utf8";
+const std::string &IdfPath = "../third_party/cppjieba/dict/idf.utf8";
+const std::string &StopWordsPath = "../third_party/cppjieba/dict/stop_words.utf8";
 
 class WordsSegment
 {

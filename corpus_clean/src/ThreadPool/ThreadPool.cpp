@@ -83,24 +83,6 @@ void ThreadPool::addTask(Task task)
     pthread_cond_signal(&m_notEmpty);
 }
 
-int ThreadPool::getAliveNumber()
-{
-    int threadNum = 0;
-    pthread_mutex_lock(&m_lock);
-    threadNum = m_aliveNum;
-    pthread_mutex_unlock(&m_lock);
-    return threadNum;
-}
-
-int ThreadPool::getBusyNumber()
-{
-    int busyNum = 0;
-    pthread_mutex_lock(&m_lock);
-    busyNum = m_busyNum;
-    pthread_mutex_unlock(&m_lock);
-    return busyNum;
-}
-
 // 工作线程任务函数
 void *ThreadPool::worker(void *arg)
 {

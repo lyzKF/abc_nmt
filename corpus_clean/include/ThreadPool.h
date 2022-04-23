@@ -12,10 +12,6 @@ public:
     int m_doneNum;
     // 添加任务
     void addTask(Task task);
-    // 获取忙线程的个数
-    int getBusyNumber();
-    // 获取活着的线程个数
-    int getAliveNumber();
 
 private:
     // 工作的线程的任务函数
